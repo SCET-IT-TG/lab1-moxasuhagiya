@@ -5,13 +5,15 @@ db=db.getSiblingDB("examDB")
 db.students.insertOne({
   name: "Amit",
   department: "Computer Science",
-  semester: 5
+  semester: 5,
+  mobile:"8546987456"
 })
 
 db.students.insertOne({
   name: "Neha",
   department: "Information Technology",
-  semester: 3
+  semester: 3,
+  mobile:"5462312598"
 })
 
 
@@ -54,7 +56,8 @@ db.students.insertOne({
   _id: ObjectId(),
   name: "Kiran",
   department: "Mechanical",
-  semester: 4
+  semester: 4,
+  mobile:"8745698745"
 })
 
 
@@ -64,7 +67,8 @@ db.students.insertOne({
 db.students.insertOne({
   _id: 101,
   name: "Suresh",
-  department: "Civil"
+  department: "Civil",
+  mobile:"6541236541"
 })
 
 
@@ -85,3 +89,4 @@ db.subjects.insert({
   course_name: "MCA",
   subject_list: ["AI", "ML", "Cloud Computing"]
 })
+
