@@ -1,0 +1,91 @@
+db = db.getSiblingDB("examDB");
+//exe-1
+db.students.insertOne({
+  name: "Moxa Suhagiya",
+  department: "IT",
+  semester: 4,
+  mobile: 2222222222
+})
+
+db.students.insertOne({
+  name: "Nency Khunt",
+  department: "IT",
+  semester: 5,
+  mobile: 2222222223
+})
+db.students.insertOne({
+  name: "Dhruvi Dav",
+  department: "IT",
+  semester: 5,
+  mobile: 2222222224
+})
+db.students.insertOne({
+  name: "Kishan Khunt",
+  department: "IT",
+  semester: 8,
+  mobile: 2224222222
+})
+//exe-2
+db.students.insertOne({
+  name: "Hitakshi Mavani",
+  department: "IT",
+  semester: 6,
+  mobile: 123456889
+})
+db.students.insertOne({
+  name: "Deep Davara",
+  department: "IT",
+  semester: 6,
+  mobile: 9876543210
+})
+
+//exe-3
+db.subjects.insertOne({
+  course_name: "IT",
+  subject_list: ["EO", "DMBI", "IOE"]
+})
+//exe-4
+db.faculty.insertOne({
+  department: "IT",
+  teachers: [
+    { name: "MD Khunt", experience: 5,semester: 6, mobile: 123456689,department: "IT", },
+    { name: "DR Khunt", experience: 6 ,semester: 6,mobile: 123456589,department: "IT",}
+  ]
+})
+//exe-5
+db.students.insertOne({
+  _id: ObjectId(),
+  name: "Prit Khunt",
+  department: "Civil",
+  semester: 6,
+  mobile:123456788
+})
+//exe-6
+db.students.insertOne({
+  _id: ObjectId("64abc123456789abcdef0001"),
+  name: "Manthan Khunt",
+  department: "Civil",
+  semester: 3,
+  mobile: 123456885
+})
+//exe-7
+db.students.insert({
+  name: "Mantra Khunt",
+  department: "Mechanical",
+  semester: 5,
+  mobile: 123456882
+})
+
+db.students.insert({
+  name: "Aarohi Khunt",
+  department: "Electrical",
+  semester: 7,
+  mobile: 123456883
+})
+
+db.students.insert({
+  name: "Raksh Khunt",
+  department: "AI",
+  semester: 8,
+  mobile: 123456881
+})  
